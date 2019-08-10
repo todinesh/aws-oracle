@@ -1,0 +1,35 @@
+{
+  "name": "aws-oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "serverless offline start"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "author": "Dinesh Sharma",
+  "license": "DishaTech",
+  "devDependencies": {
+    "oracledb": "^3.1.2"
+  },
+  "dependencies": {
+    "oracledb-for-lambda": "^1.9.3-8a",
+    "serverless-offline": "^5.10.1"
+  }
+}
